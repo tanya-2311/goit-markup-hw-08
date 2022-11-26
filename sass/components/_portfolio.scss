@@ -1,0 +1,111 @@
+
+.main-portfolio {
+    padding: 94px 0;
+}
+
+.photo-portfolio {
+
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.filtr-item {
+    margin-right: 30px;
+    margin-bottom: 30px;
+}
+.filtr-item:nth-child(3n) {
+    margin-right: 0;
+}
+
+.filtr-item:nth-last-child(-n+3) {
+    margin-bottom: 0;
+}
+
+.portfolio-link {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+
+    transition-property: border, box-shadow;
+    transition-duration: var(--trnz-duration);
+    transition-timing-function: var(--trnz-tim-fnct);
+
+    &:hover {
+        border: 1px solid color var(--secondary-text-color);
+        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);}
+    
+    &:focus {
+        border: 1px solid color var(--secondary-text-color);
+        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);}
+
+}
+
+
+.title-stule {
+    padding-top: 20px;
+    padding-right: 24px;
+    padding-bottom: 20px;
+    padding-left: 24px;
+    border: 1px solid var(--border-photo);
+    border-top: none;
+
+}
+.portfolio-title {
+
+    margin-bottom: 4px;
+    color: var(--primary-text-color);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2.0;
+    letter-spacing: 0.06em;
+}
+
+.title-filtr {
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.88;
+}
+
+.team-thumb {
+    position: relative;
+    overflow: hidden;
+}
+
+.portfolio-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateY(101%);
+
+    transition-property: transform;
+    transition-duration: var(--trnz-duration);
+    transition-timing-function: var(--trnz-tim-fnct);
+
+    backdrop-filter: blur(1px);
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+
+    background-color: var(--background-overlay);
+}
+
+.portfolio-overlay-text {
+    padding: 0 24px;
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.56;
+    color: var(--secondary-text-color);
+}
+
+
+.portfolio-link:hover .portfolio-overlay,
+.portfolio-link:focus .portfolio-overlay {
+    transform: translateY(0);
+}

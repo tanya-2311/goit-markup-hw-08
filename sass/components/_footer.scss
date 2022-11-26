@@ -1,0 +1,114 @@
+
+/* footer */
+.footer {
+    background-color: var(--backrground-secondary);
+    padding: 60px 0;
+}
+
+.footer-adress {
+    margin-top: 20px;
+}
+
+.footer-item {
+    margin-bottom: 9px;
+}
+
+.footer-item:last-child {
+    margin-bottom: 0;
+}
+
+.title-adress {
+
+    text-decoration: none;
+    color: var(--secondary-text-color);
+    line-height: 1.71;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.title-contact {
+    display: flex;
+    align-items: center;
+
+    transition-property: color;
+    transition-duration: var(--trnz-duration);
+    transition-timing-function: var(--trnz-tim-fnct);
+
+    color: var(--main-text-color);
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+
+    &:hover,
+    &:focus {
+    color: var(--brand-color);}
+}
+
+
+
+.footer-item>.title-contact {
+
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.71;
+}
+
+.footer-social {
+    display: flex;
+    align-items: baseline;
+}
+
+.footer-title {
+    margin-bottom: 20px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    color: var(--secondary-text-color);
+}
+
+.footer-social-list {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+ 
+}
+
+.social-links-footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transition-property: color, background-color;
+    transition-duration: var(--trnz-duration);
+    transition-timing-function: var(--trnz-tim-fnct);
+
+    width: 44px;
+    height: 44px;
+    color: var(--secondary-text-color);
+    background-color: rgba(255, 255, 255, 0.1);
+
+    border-radius: 50%;
+
+    &:hover,
+   &:focus {
+    color: var(--secondary-text-color);
+    background-color: var(--brand-color);}
+    
+}
+
+.social-icon-footer {
+    fill: currentColor;
+}
+
+.footer-contacts {
+    margin-right: 70px;
+   
+}

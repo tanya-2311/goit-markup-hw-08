@@ -1,0 +1,48 @@
+.features {
+    padding: 94px 0;
+}
+
+.our-features {
+    display: flex;
+}
+
+.icon-features__title {
+    margin-bottom: 10px;
+
+    font-size: 14px;
+    color: var(--primary-text-color);
+}
+
+.our-features__item {
+    width: 270px;
+    flex-basis: calc(100%/4 - 30px);
+    margin-right: 30px;
+
+}
+
+.our-features__item:last-child {
+    margin-right: 0;
+}
+
+/* icon-features(наші особливості svg) */
+.icon-features {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--backrground-comand);
+    width: 270px;
+    height: 120px;
+    margin-bottom: 30px;
+}
+
+
+.our-features__item:first-child {
+    margin-left: 0;
+}
+
+.icon-features__text {
+    font-weight: 400;
+    line-height: 1.71;
+
+}
+

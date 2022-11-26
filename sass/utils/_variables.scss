@@ -1,0 +1,25 @@
+/* палітра кольлорів */
+:root {
+    --brand-color: #2196F3;
+    --background-overlay: rgba(33, 150, 243, 0.9);
+    --main-text-color: #757575;
+    --primary-text-color: #212121;
+    --secondary-text-color: #FFFFFF;
+    --logo-text-color: #000000;
+    --button-text-focus: #188CE8;
+    --icons-color: #AFB1B8;
+    --color-info: rgba(255, 255, 255, 0.6);
+    --backrground-comand: #F5F4FA;
+    --backrground-secondary: #2F303A;
+    --primery-font: Roboto, san-serif;
+    --secondary-font: Raleway, san-serif;
+    --border-background: #ECECEC;
+    --border-photo: #EEEEEE;
+    --color-gradient: rgba(47, 48, 58, 0.4);
+    --idx-header: 100;
+    --idx-backdroup: 1000;
+
+    --trnz-duration: 250ms;
+    --trnz-tim-fnct: cubic-bezier(0.4, 0, 0.2, 1);
+
+}

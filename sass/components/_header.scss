@@ -1,0 +1,45 @@
+/* HEADER */
+.header {
+    border-bottom: 1px solid var(--border-background)
+}
+/* header-container ставимо навігацію в ряд */
+.header__container {
+    display: flex;
+    align-items: center;
+}
+
+.header-contacts {
+    display: flex;
+    margin-left: auto;
+}
+
+.header-contacts .header-contacts__item+.header-contacts__item {
+    margin-left: 50px;
+}
+
+.header-contacts__title {
+    display: flex;
+    align-items: center;
+
+    transition-property: color;
+    transition-duration: var(--trnz-duration);
+    transition-timing-function: var(--trnz-tim-fnct);
+
+    color: var(--main-text-color);
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+
+    &:hover,
+    &:focus {
+    color: var(--brand-color);}
+}
+
+
+.header-contacts__icon {
+
+    margin-right: 10px;
+    fill: currentColor;
+}
