@@ -965,7 +965,7 @@ button {
 .features {
   padding: 60px 0;
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) {
   .features {
     padding: 94px 0;
   }
@@ -979,6 +979,7 @@ button {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     width: 738px;
+    gap: 30px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -986,6 +987,8 @@ button {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    width: 1170px;
+    gap: 30px;
   }
 }
 
@@ -1003,14 +1006,13 @@ button {
   font-size: 14px;
   color: var(--primary-text-color);
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) {
   .icon-features__title {
     display: block;
   }
 }
 
 .our-features__item {
-  width: 450px;
   margin-top: 30px;
 }
 
@@ -1030,22 +1032,10 @@ button {
       -ms-flex-align: center;
           align-items: center;
   background-color: var(--backrground-comand);
-  width: 450px;
-  height: 120px;
   margin-bottom: 30px;
 }
 @media screen and (min-width: 768px) {
   .icon-features {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    background-color: var(--backrground-comand);
     width: 354px;
     height: 120px;
     margin-bottom: 30px;
@@ -1053,19 +1043,8 @@ button {
 }
 @media screen and (min-width: 1200px) {
   .icon-features {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    background-color: var(--backrground-comand);
     width: 270px;
     height: 120px;
-    margin-bottom: 30px;
   }
 }
 
@@ -1076,6 +1055,16 @@ button {
 .icon-features__text {
   font-weight: 400;
   line-height: 1.71;
+}
+@media screen and (min-width: 768px) {
+  .icon-features__text {
+    width: 354px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .icon-features__text {
+    width: 270px;
+  }
 }
 
 .servis {
