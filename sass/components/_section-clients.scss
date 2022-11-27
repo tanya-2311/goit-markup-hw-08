@@ -1,10 +1,25 @@
 .clients__title {
-    margin-bottom: 50px;
+    margin-bottom: 30px;
+
+    @media screen and( min-width: $desctop){ margin-bottom: 50px;
+
+    }
 }
 
-.clients__list {
-    display: flex;
+.clients__list
+ {display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 450px;
     gap: 30px;
+    @media screen and( min-width: $tablet){
+       width: 738px;
+        }
+    @media screen and( min-width: $desctop){
+        width: 1170px;
+
+    }
+    
 }
 
 .clients__link {
@@ -16,7 +31,7 @@
     transition-duration: var(--trnz-duration);
     transition-timing-function: var(--trnz-tim-fnct);
 
-    width: 170px;
+    width: 210px;
     height: 92px;
     border: 1px solid currentColor;
     border-radius: 4px;
@@ -25,9 +40,15 @@
     &:hover,
     &:focus {
     color: var(--brand-color);}
+
+    @media screen and( min-width: $tablet){
+        width: 226px;}
+        @media screen and( min-width: $desctop){
+            width: 170px;
+
 }
 
-
+}
 .clients__icon {
     fill: currentColor;
 }
