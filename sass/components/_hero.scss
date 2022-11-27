@@ -1,7 +1,9 @@
 /* section-hero */
 .hero {
-    max-width: 1600px;
-    height: 600px;
+
+
+    max-width: 480px;
+    height: 400px;
 
     background-color: var(--backrground-secondary);
     background-image: linear-gradient(to right,
@@ -13,21 +15,36 @@
     background-position: center;
 
     text-align: center;
-    padding: 200px 0;
+    padding: 118px 0;
     margin: 0 auto;
+
+    @media screen and( min-width: $tablet) {max-width: 768px;
+        
+    }
+    @media screen and ( min-width: $desctop){max-width: 1600px;
+        height: 600px;
+        padding: 200px 0;
+
+    }
 
 }
 .hero__title {
-    width: 696px;
+    width: 360px;
     margin: 0 auto;
 
 
     color: var(--secondary-text-color);
     font-style: normal;
     font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
+    font-size: 26px;
+    line-height: 1.61;
     letter-spacing: 0.06em;
     text-transform: uppercase;
+
+    @media screen and ( min-width: $desctop){width: 696px;
+        font-weight: 900;
+        font-size: 44px;
+        line-height: 1.36;
+        letter-spacing: 0.06em;}
 
 }

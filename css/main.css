@@ -398,8 +398,8 @@ button {
 
 /* section-hero */
 .hero {
-  max-width: 1600px;
-  height: 600px;
+  max-width: 480px;
+  height: 400px;
   background-color: var(--backrground-secondary);
   background-image: -webkit-gradient(linear, left top, right top, from(var(--color-gradient)), to(var(--color-gradient))), url(../images/background-img.jpg);
   background-image: linear-gradient(to right, var(--color-gradient), var(--color-gradient)), url(../images/background-img.jpg);
@@ -407,20 +407,41 @@ button {
   background-size: cover;
   background-position: center;
   text-align: center;
-  padding: 200px 0;
+  padding: 118px 0;
   margin: 0 auto;
+}
+@media screen and (min-width: 768px) {
+  .hero {
+    max-width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero {
+    max-width: 1600px;
+    height: 600px;
+    padding: 200px 0;
+  }
 }
 
 .hero__title {
-  width: 696px;
+  width: 360px;
   margin: 0 auto;
   color: var(--secondary-text-color);
   font-style: normal;
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
+  font-size: 26px;
+  line-height: 1.61;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+}
+@media screen and (min-width: 1200px) {
+  .hero__title {
+    width: 696px;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    letter-spacing: 0.06em;
+  }
 }
 
 /* навігація хедера */
