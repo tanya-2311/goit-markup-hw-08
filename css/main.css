@@ -444,19 +444,28 @@ button {
   }
 }
 
+@media screen and (max-width: 767px) {
+  .nav {
+    display: none;
+  }
+}
+
 /* навігація хедера */
-.header__nav {
-  margin-left: 93px;
+@media screen and (min-width: 768px) {
+  .header__nav {
+    margin-left: 87px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header__nav {
+    margin-left: 93px;
+  }
 }
 
 .nav__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-}
-
-.nav__link:not(:last-child) {
-  margin-right: 50px;
 }
 
 .nav__link .link {
@@ -477,6 +486,10 @@ button {
   line-height: 1.14;
   letter-spacing: 0.02em;
   font-style: normal;
+}
+
+.nav__link:not(:last-child) {
+  margin-right: 50px;
 }
 
 .nav__list .link.current,

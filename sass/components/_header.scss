@@ -9,9 +9,17 @@
 }
 
 .header-contacts {
+    @media screen and( max-width: 768px){display: block;
+        display: none;
+    }
+   outline: 2px solid green;
     display: flex;
-    margin-left: auto;
+    margin-left: 25px;
+      
 }
+
+
+
 
 .header-contacts .header-contacts__item+.header-contacts__item {
     margin-left: 50px;

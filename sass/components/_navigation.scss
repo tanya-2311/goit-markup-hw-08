@@ -1,19 +1,23 @@
+.nav { 
+    @media screen and( max-width: 767px){ display: none;}
 
+}
 /* навігація хедера */
+
 .header__nav {
-    margin-left: 93px;
+   
+   
+    @media screen and (min-width: $tablet){margin-left: 87px;}
+
+    @media screen and (min-width: $desctop){margin-left: 93px;}
+
 }
 .nav__list {
-    display: flex;
+    display: flex;}
 
-}
-
-.nav__link:not(:last-child) {
-
-    margin-right: 50px;
-}
 
 .nav__link .link {
+    
     display: block;
     position: relative;
 
@@ -34,6 +38,10 @@
 
 }
 
+.nav__link:not(:last-child) {
+
+    margin-right: 50px;
+}
 .nav__list .link.current,
 .nav__list .link:hover,
 .nav__list .link:focus {
