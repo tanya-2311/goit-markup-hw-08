@@ -9,10 +9,10 @@
 }
 
 .header-contacts {
-    @media screen and( max-width: 768px){display: block;
+    @media screen and( max-width: 768px){
         display: none;
     }
-   outline: 2px solid green;
+ 
     display: flex;
     margin-left: 25px;
       

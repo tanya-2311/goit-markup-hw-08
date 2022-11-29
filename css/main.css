@@ -360,7 +360,12 @@ button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-left: auto;
+  margin-left: 25px;
+}
+@media screen and (max-width: 768px) {
+  .header-contacts {
+    display: none;
+  }
 }
 
 .header-contacts .header-contacts__item + .header-contacts__item {
