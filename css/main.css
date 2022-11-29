@@ -362,7 +362,7 @@ button {
   display: flex;
   margin-left: 25px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .header-contacts {
     display: none;
   }
