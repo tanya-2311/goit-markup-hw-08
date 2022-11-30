@@ -1521,17 +1521,28 @@ button {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100vw;
-  height: 100vh;
-  padding: 32px;
-  background-color: #3f51b5;
+  width: 480px;
+  height: 796px;
+  padding: 48px 40px;
+  background-color: #FFFFFF;
+  -webkit-box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
+          box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
   z-index: 999;
   -webkit-transform: translateX(100%);
           transform: translateX(100%);
-  -webkit-transition: -webkit-transform 250ms ease-in-out;
-  transition: -webkit-transform 250ms ease-in-out;
-  transition: transform 250ms ease-in-out;
-  transition: transform 250ms ease-in-out, -webkit-transform 250ms ease-in-out;
+  -webkit-transition: -webkit-transform;
+  transition: -webkit-transform;
+  transition: transform;
+  transition: transform, -webkit-transform;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: var(--trnz-duration);
+          transition-duration: var(--trnz-duration);
+  -webkit-transition-timing-function: var(--trnz-tim-fnct);
+          transition-timing-function: var(--trnz-tim-fnct);
+}
+.menu-container:hover, .menu-container:focus {
+  color: var(--brand-color);
 }
 
 .menu-container.is-open {
@@ -1555,6 +1566,10 @@ button {
 .mobile-menu .link {
   display: block;
   padding: 10px;
-  color: #fff;
-  text-decoration: none;
+  color: #212121;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.18;
+  letter-spacing: 0.02em;
 }/*# sourceMappingURL=main.css.map */
