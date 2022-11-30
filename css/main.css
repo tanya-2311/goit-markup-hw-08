@@ -1534,15 +1534,6 @@ button {
   transition: -webkit-transform;
   transition: transform;
   transition: transform, -webkit-transform;
-  -webkit-transition-property: color;
-  transition-property: color;
-  -webkit-transition-duration: var(--trnz-duration);
-          transition-duration: var(--trnz-duration);
-  -webkit-transition-timing-function: var(--trnz-tim-fnct);
-          transition-timing-function: var(--trnz-tim-fnct);
-}
-.menu-container:hover, .menu-container:focus {
-  color: #2196F3;
 }
 
 .menu-container.is-open {
@@ -1572,4 +1563,56 @@ button {
   font-size: 40px;
   line-height: 1.18;
   letter-spacing: 0.02em;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: var(--trnz-duration);
+          transition-duration: var(--trnz-duration);
+  -webkit-transition-timing-function: var(--trnz-tim-fnct);
+          transition-timing-function: var(--trnz-tim-fnct);
+}
+.mobile-menu .link:hover, .mobile-menu .link:focus {
+  color: #2196F3;
+}
+
+.button-close-menu {
+  background-color: transparent;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: var(--trnz-duration);
+          transition-duration: var(--trnz-duration);
+  -webkit-transition-timing-function: var(--trnz-tim-fnct);
+          transition-timing-function: var(--trnz-tim-fnct);
+}
+.button-close-menu:hover, .button-close-menu:focus {
+  fill: var(--brand-color);
+}
+
+.mobile-contacts {
+  outline: 2px solid green;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.mobile-contacts .menu-tel {
+  margin-top: 32px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 1.1764705882;
+  letter-spacing: 0.02em;
+  color: #2196F3;
+}
+
+.mobile-contacts .menu-mailto {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.1666666667;
+  letter-spacing: 0.02em;
+  color: #757575;
 }/*# sourceMappingURL=main.css.map */

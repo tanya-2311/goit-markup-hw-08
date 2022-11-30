@@ -66,15 +66,7 @@
     transform: translateX(100%);
     transition: transform;
     
-    transition-property: color;
-    transition-duration: var(--trnz-duration);
-    transition-timing-function: var(--trnz-tim-fnct);
-
     
-    &:hover,
-    &:focus {
-    color: #2196F3;
-    }
   }
   
   .menu-container.is-open {
@@ -104,8 +96,56 @@ font-weight: 500;
 font-size: 40px;
 line-height: 1.18;
 letter-spacing: 0.02em;
+transition-property: color;
+    transition-duration: var(--trnz-duration);
+    transition-timing-function: var(--trnz-tim-fnct);
+    
+    &:hover,
+    &:focus {
+    color: #2196F3;
+    }
   }
   .button-close-menu{
+
+   
+    background-color: transparent;
+
+    transition-property: color;
+    transition-duration: var(--trnz-duration);
+    transition-timing-function: var(--trnz-tim-fnct);
+    
+    &:hover,
+   &:focus {
+    fill: var(--brand-color);}
     
     
   }
+
+  .mobile-contacts{outline: 2px solid green;
+    display: flex;
+    flex-direction: column;
+    
+    
+  }
+  .mobile-contacts .menu-tel{
+    margin-top: 32px;
+   
+
+font-style: normal;
+font-weight: 500;
+font-size: 34px;
+line-height: calc(40/34);
+letter-spacing: 0.02em;
+
+color: #2196F3;
+
+  }
+  .mobile-contacts .menu-mailto{    
+font-style: normal;
+font-weight: 500;
+font-size: 24px;
+line-height: calc(28/24);
+letter-spacing: 0.02em;
+
+color: #757575;
+}
