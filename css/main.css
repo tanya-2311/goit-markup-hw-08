@@ -1521,6 +1521,13 @@ button {
   position: fixed;
   top: 0;
   left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   width: 480px;
   height: 796px;
   padding: 48px 40px;
@@ -1550,7 +1557,7 @@ button {
 
 .mobile-menu {
   padding: 0;
-  margin: 0;
+  margin-bottom: auto;
   list-style: none;
 }
 
@@ -1615,4 +1622,19 @@ button {
   line-height: 1.1666666667;
   letter-spacing: 0.02em;
   color: #757575;
+}
+
+.mobile-social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 20px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.2222222222;
+  letter-spacing: 0.02em;
+  color: #2196F3;
 }/*# sourceMappingURL=main.css.map */
