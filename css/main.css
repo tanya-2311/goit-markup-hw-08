@@ -1542,7 +1542,7 @@ button {
           transition-timing-function: var(--trnz-tim-fnct);
 }
 .menu-container:hover, .menu-container:focus {
-  color: var(--brand-color);
+  color: #2196F3;
 }
 
 .menu-container.is-open {
