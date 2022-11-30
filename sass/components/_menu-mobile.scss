@@ -109,7 +109,6 @@ transition-property: color;
   }
   .button-close-menu{
 
-   
     background-color: transparent;
 
     transition-property: color;
@@ -130,8 +129,6 @@ transition-property: color;
     
   }
   .mobile-contacts .menu-tel{
-    margin-top: 32px;
-   
 
 font-style: normal;
 font-weight: 500;
@@ -142,7 +139,8 @@ letter-spacing: 0.02em;
 color: #2196F3;
 
   }
-  .mobile-contacts .menu-mailto{    
+  .mobile-contacts .menu-mailto{   
+    margin-top: 32px; 
 font-style: normal;
 font-weight: 500;
 font-size: 24px;
@@ -154,6 +152,7 @@ color: #757575;
 .mobile-social{display: flex;
     flex-wrap: wrap;
     gap: 20px;
+    margin-top: 64px;
   
 font-style: normal;
 font-weight: 500;
