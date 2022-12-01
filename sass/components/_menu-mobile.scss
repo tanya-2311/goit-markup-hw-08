@@ -122,7 +122,10 @@ transition-property: color;
     
   }
 
-  .mobile-contacts{
+  .mobile-contacts{display: flex;
+    flex-direction: column;
+    padding-top: 30px;
+   gap: 30px;
    
     
     
