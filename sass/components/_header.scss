@@ -9,19 +9,39 @@
 }
 
 .header-contacts {
+
+    
     @media screen and( max-width: 767px){
         display: none;
 
     }
- 
-    display: flex;
-    margin-left: auto;
+    
+      @media screen and( min-width: $tablet){ margin-left: auto;
+    
+
+      }
+
+      @media screen and( min-width: $desctop){
+        display: flex;
+        margin-left: auto;
+    }
       
 }
 
 
 .header-contacts .header-contacts__item+.header-contacts__item {
-    margin-left: 50px;
+    
+   
+    @media screen and (min-width:$desctop){ margin-left: 50px;
+
+    }
+}
+.header-contacts__item{
+    @media screen and (max-width:1199px){ margin-bottom: 10px;
+
+}
+
+   
 }
 
 .header-contacts__title {
