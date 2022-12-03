@@ -106,6 +106,7 @@
     display: flex;
 
     justify-content: center;
+    text-align: center;
     margin-bottom: 12px;
     font-weight: 700;
     font-size: 20px;
@@ -260,13 +261,26 @@ margin-bottom: 10px;
     border: 2px solid var(--secondary-text-color);
     border-radius: 2px;
     top: 50%;
-    left: 17px;
+    left: 2px;
     transform: translateY(-50%);
 
 
     transition-property: background-color, color;
     transition-duration: var(--trnz-duration);
     transition-timing-function: var(--trnz-tim-fnct);
+
+    @media screen and ( min-width:$desctop){
+        position: absolute;
+    display: inline-block;
+  
+
+    margin-bottom: 30px;
+
+    width: 16px;
+    height: 15px;
+    top: 50%;
+    left: 12px;
+    }
 
 }
 
@@ -279,8 +293,14 @@ margin-bottom: 10px;
 .form-agreement-text {
     user-select: none;
     font-weight: 400;
-    line-height: 1.71;
-    padding-left: 23px;
+font-size: 12px;
+line-height: 1.16px;
+padding-left: 10px;
+ 
+    @media screen and (min-width:$desctop){ 
+        line-height: 1.71;
+        padding-left: 33px;
+    }
 }
 
 .form-chechbox-icon .unchecked {

@@ -25,6 +25,7 @@
     top: 50%;
     left: 50%;
     padding: 40px 40px;
+    overflow: scroll;
 
     transform: translate(-50%, -50%) scale(1);
     z-index: 1000;
@@ -32,8 +33,8 @@
     transition-duration: var(--trnz-duration);
     transition-timing-function: var(--trnz-tim-fnct);
 
-    width: 450px;
-    height: 609px;
+    max-width: 450px;
+    max-height: 609px;
 
     @media screen and (min-width:$desctop){
     width: 528px;
