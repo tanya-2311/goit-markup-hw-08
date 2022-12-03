@@ -1581,7 +1581,7 @@ button {
   gap: 30px;
 }
 
-.mobile-contacts .menu-tel {
+.mobile-contacts__tel {
   font-style: normal;
   font-weight: 500;
   font-size: 34px;
@@ -1590,7 +1590,7 @@ button {
   color: #2196F3;
 }
 
-.mobile-contacts .menu-mailto {
+.mobile-contacts__mailto {
   margin-top: 32px;
   font-style: normal;
   font-weight: 500;
@@ -1614,4 +1614,14 @@ button {
   line-height: 1.2222222222;
   letter-spacing: 0.02em;
   color: #2196F3;
+}
+
+.mobile-social__line {
+  width: 22px;
+  height: 0px;
+  left: 315px;
+  top: 726px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
 }/*# sourceMappingURL=main.css.map */
