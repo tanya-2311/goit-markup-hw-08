@@ -1,6 +1,9 @@
 /* form-footer */
 .form-footer {
-    margin-left: auto;
+    @media screen and( min-width:$desctop){  margin-left: auto;
+
+    }
+  
 }
 
 .form-footer-title {

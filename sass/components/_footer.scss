@@ -3,15 +3,46 @@
 .footer {
     background-color: var(--backrground-secondary);
     padding: 60px 0;
+  
 }
 
 .footer-social {
-    display: flex;
-    align-items: baseline;
+   display: flex;
+    text-align: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+
+
+    @media screen and(  min-width:$tablet){ 
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+       
+    }
+      
+    
+    @media screen and (min-width: $desctop)
+    { display: flex;
+        align-items: baseline;
+
+    }
 }
 .footer-contacts {
-    margin-right: 70px;
-   
+    text-align: center;
+    
+margin-right: 120px;
+margin-left: auto;
+margin-bottom: 60px;
+
+    @media screen and( min-width:$desctop){  margin-right: 70px;
+
+    }  
+}
+.footer-social-link{
+    margin-bottom: 60px;
 }
 .footer-adress {
     margin-top: 20px;
