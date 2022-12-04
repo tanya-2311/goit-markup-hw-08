@@ -1384,6 +1384,19 @@ button {
   padding: 60px 0;
 }
 
+.footer-social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+
+.footer-contacts {
+  margin-right: 70px;
+}
+
 .footer-adress {
   margin-top: 20px;
 }
@@ -1432,15 +1445,6 @@ button {
   font-style: normal;
   font-weight: 400;
   line-height: 1.71;
-}
-
-.footer-social {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
 }
 
 .footer-title {
@@ -1496,10 +1500,6 @@ button {
 
 .social-icon-footer {
   fill: currentColor;
-}
-
-.footer-contacts {
-  margin-right: 70px;
 }
 
 .menu-toggle {

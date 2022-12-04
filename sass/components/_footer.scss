@@ -5,6 +5,14 @@
     padding: 60px 0;
 }
 
+.footer-social {
+    display: flex;
+    align-items: baseline;
+}
+.footer-contacts {
+    margin-right: 70px;
+   
+}
 .footer-adress {
     margin-top: 20px;
 }
@@ -55,10 +63,7 @@
     line-height: 1.71;
 }
 
-.footer-social {
-    display: flex;
-    align-items: baseline;
-}
+
 
 .footer-title {
     margin-bottom: 20px;
@@ -108,7 +113,4 @@
     fill: currentColor;
 }
 
-.footer-contacts {
-    margin-right: 70px;
-   
-}
+
