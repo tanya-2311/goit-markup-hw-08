@@ -164,13 +164,17 @@ button {
 
 /* buttons-potfolio */
 .buttons-portfolio {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   margin-bottom: 50px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+@media screen and (min-width: 1200px) {
+  .buttons-portfolio {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 
 .button-portfolio {
@@ -221,9 +225,6 @@ button {
 
 .button-footer-form {
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   padding: 10px 28px;
   width: 200px;
   gap: 10px;
@@ -244,6 +245,13 @@ button {
 .button-footer-form:hover, .button-footer-form:focus {
   color: var(--secondary-text-color);
   background-color: var(--button-text-focus);
+}
+@media screen and (min-width: 1200px) {
+  .button-footer-form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 
 .close-button {
@@ -1454,6 +1462,24 @@ button {
 .footer--flex {
   text-align: center;
 }
+@media screen and (min-width: 768px) {
+  .footer--flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+  }
+}
 @media screen and (min-width: 1200px) {
   .footer--flex {
     display: -webkit-box;
@@ -1532,12 +1558,6 @@ button {
 }
 
 .title-contact {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-transition-property: color;
   transition-property: color;
   -webkit-transition-duration: var(--trnz-duration);
@@ -1553,6 +1573,16 @@ button {
 }
 .title-contact:hover, .title-contact:focus {
   color: var(--brand-color);
+}
+@media screen and (min-width: 1200px) {
+  .title-contact {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 
 .footer-item > .title-contact {

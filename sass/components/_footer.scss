@@ -14,7 +14,14 @@
 .footer--flex {
 
     text-align: center;
-      
+    @media screen and (min-width: $tablet)
+    { display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: baseline;
+
+    }
        
     @media screen and (min-width: $desctop)
     { display: flex;
@@ -26,9 +33,6 @@
    
     text-align: center;
     
-    
-// margin-right: 120px;
-//  margin-left: auto;
 margin-bottom: 60px;
 
     @media screen and( min-width:$desctop){  margin-right: 70px;
@@ -84,9 +88,7 @@ align-items: center;
 }
 
 .title-contact {
-    display: flex;
-    align-items: center;
-
+   
     transition-property: color;
     transition-duration: var(--trnz-duration);
     transition-timing-function: var(--trnz-tim-fnct);
@@ -101,7 +103,10 @@ align-items: center;
     &:hover,
     &:focus {
     color: var(--brand-color);}
-    
+    @media screen and( min-width:$desctop){ display: flex;
+        align-items: center;
+
+    }
 }
 
 
@@ -133,6 +138,7 @@ align-items: center;
     justify-content: center;
     gap: 10px;
     margin-top: 20px;
+   
  
 }
 
