@@ -20,8 +20,18 @@
     text-decoration: none;
     font-family: var(--secondary-font);
     font-weight: 700;
-    font-size: 26px;
-    line-height: 1.19;
+    font-size: 24px;
+line-height: 1.16;
+    @media screen and(min-width:768px){font-size: 26px;
+        line-height: 1.19;
+
+    }
+    @media screen and (max-width:1199px){
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        margin-left: auto;
+    }
 }
 
 .logo-studiof {
