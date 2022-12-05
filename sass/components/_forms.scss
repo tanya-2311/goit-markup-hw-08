@@ -3,7 +3,7 @@
     flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
-
+   
 
     @media screen and( min-width:$desctop){  margin-left: auto;
 
@@ -24,12 +24,8 @@
 
 }
 
-.form-footer-email {display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-
+.form-footer-email {
+    
     margin-top: 20px;
 }
 
@@ -37,6 +33,12 @@
 .footer-form-list {
     display: flex;
 
+@media screen and(max-width:1199px){
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
 
 }
 
@@ -75,7 +77,9 @@
         height: 50px;
 
     }
-
+     @media screen and (max-width:1199px){
+    margin-bottom: 20px;
+}
 }
 
 .input-footer::placeholder {
