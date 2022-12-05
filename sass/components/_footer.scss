@@ -15,16 +15,7 @@
 
     text-align: center;
       
-
-
-    // @media screen and(  min-width:$tablet){ 
-    //     display: flex;
-    //     flex-direction: row;
-    //     flex-wrap: wrap;
        
-    // }
-      
-    
     @media screen and (min-width: $desctop)
     { display: flex;
         align-items: baseline;
@@ -110,6 +101,7 @@ align-items: center;
     &:hover,
     &:focus {
     color: var(--brand-color);}
+    
 }
 
 
