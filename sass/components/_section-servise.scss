@@ -1,6 +1,12 @@
 
 .servis {
-    padding-bottom: 94px;
+    
+    @media screen and(max-width:1199px){
+        display: none;
+    }
+    @media screen and (min-width:$desctop){padding-bottom: 94px;
+
+    }
 }
 .service__title {
     margin-bottom: 50px;

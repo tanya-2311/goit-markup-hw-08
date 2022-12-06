@@ -1211,8 +1211,15 @@ button {
   }
 }
 
-.servis {
-  padding-bottom: 94px;
+@media screen and (max-width: 1199px) {
+  .servis {
+    display: none;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .servis {
+    padding-bottom: 94px;
+  }
 }
 
 .service__title {
