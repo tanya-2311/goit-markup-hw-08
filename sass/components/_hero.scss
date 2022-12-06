@@ -21,7 +21,7 @@
         url(../images/hero-background/s-background_480.jpg);
         
 
-        // retina screen
+                 // retina screen
         @media (min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
         (min-resolution: 2dppx){
@@ -33,7 +33,9 @@
         }
    
 
-// tablet screen
+                // tablet screen
+@media screen and (min-width: 769px)
+{
 
 background-image: linear-gradient(to right,
 var(--color-gradient),
@@ -42,7 +44,7 @@ var(--color-gradient)),
 url(../images/hero-background/m-backround\ _768.jpg);
 
 
-// retina screen
+           // tablet-retina screen
 @media (min-device-pixel-ratio: 2),
 (min-resolution: 192dpi),
 (min-resolution: 2dppx){
@@ -52,8 +54,9 @@ background-image: linear-gradient(to right,
 
     url(../images/hero-background/m-background\ _1536.jpg);
 }
-
-// decstop screen
+}
+// desctop screen
+@media screen and(min-width: 1201px){
 
 background-image: linear-gradient(to right,
 var(--color-gradient),
@@ -62,7 +65,7 @@ var(--color-gradient)),
 url(../images/hero-background/l-background_1600.jpg);
 
 
-// retina screen
+// desctop retina screen
 @media (min-device-pixel-ratio: 2),
 (min-resolution: 192dpi),
 (min-resolution: 2dppx){
@@ -73,7 +76,7 @@ background-image: linear-gradient(to right,
     url(../../images/hero-background/l-background_3200.jpg);
 }
 
-
+}
 
 
 
