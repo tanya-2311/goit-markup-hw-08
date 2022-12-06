@@ -84,6 +84,7 @@ p {
 img {
   display: block;
   max-width: 100%;
+  height: auto;
 }
 
 .footer-addres {
@@ -440,17 +441,23 @@ button {
 
 /* section-hero */
 .hero {
-  max-width: 480px;
-  height: 400px;
-  background-color: var(--backrground-secondary);
-  background-image: -webkit-gradient(linear, left top, right top, from(var(--color-gradient)), to(var(--color-gradient))), url(../images/background-img.jpg);
-  background-image: linear-gradient(to right, var(--color-gradient), var(--color-gradient)), url(../images/background-img.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
   text-align: center;
   padding: 118px 0;
   margin: 0 auto;
+  max-width: 480px;
+  height: 400px;
+  background-color: var(--backrground-secondary);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-image: -webkit-gradient(linear, left top, right top, from(var(--color-gradient)), to(var(--color-gradient))), url(../images/hero-background/s-background_480.jpg);
+  background-image: linear-gradient(to right, var(--color-gradient), var(--color-gradient)), url(../images/hero-background/s-background_480.jpg);
+}
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero {
+    background-image: -webkit-gradient(linear, left top, right top, from(var(--color-gradient)), to(var(--color-gradient))), url(../images/hero-background/s-background_960.jpg);
+    background-image: linear-gradient(to right, var(--color-gradient), var(--color-gradient)), url(../images/hero-background/s-background_960.jpg);
+  }
 }
 @media screen and (min-width: 768px) {
   .hero {
