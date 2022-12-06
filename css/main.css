@@ -452,11 +452,27 @@ button {
   background-position: center;
   background-image: -webkit-gradient(linear, left top, right top, from(var(--color-gradient)), to(var(--color-gradient))), url(../images/hero-background/s-background_480.jpg);
   background-image: linear-gradient(to right, var(--color-gradient), var(--color-gradient)), url(../images/hero-background/s-background_480.jpg);
+  background-image: -webkit-gradient(linear, left top, right top, from(var(--color-gradient)), to(var(--color-gradient))), url(../images/hero-background/m-backround\ _768.jpg);
+  background-image: linear-gradient(to right, var(--color-gradient), var(--color-gradient)), url(../images/hero-background/m-backround\ _768.jpg);
+  background-image: -webkit-gradient(linear, left top, right top, from(var(--color-gradient)), to(var(--color-gradient))), url(../images/hero-background/l-background_1600.jpg);
+  background-image: linear-gradient(to right, var(--color-gradient), var(--color-gradient)), url(../images/hero-background/l-background_1600.jpg);
 }
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero {
     background-image: -webkit-gradient(linear, left top, right top, from(var(--color-gradient)), to(var(--color-gradient))), url(../images/hero-background/s-background_960.jpg);
     background-image: linear-gradient(to right, var(--color-gradient), var(--color-gradient)), url(../images/hero-background/s-background_960.jpg);
+  }
+}
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero {
+    background-image: -webkit-gradient(linear, left top, right top, from(var(--color-gradient)), to(var(--color-gradient))), url(../images/hero-background/m-background\ _1536.jpg);
+    background-image: linear-gradient(to right, var(--color-gradient), var(--color-gradient)), url(../images/hero-background/m-background\ _1536.jpg);
+  }
+}
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero {
+    background-image: -webkit-gradient(linear, left top, right top, from(var(--color-gradient)), to(var(--color-gradient))), url(../../images/hero-background/l-background_3200.jpg);
+    background-image: linear-gradient(to right, var(--color-gradient), var(--color-gradient)), url(../../images/hero-background/l-background_3200.jpg);
   }
 }
 @media screen and (min-width: 768px) {

@@ -33,6 +33,52 @@
         }
    
 
+// tablet screen
+
+background-image: linear-gradient(to right,
+var(--color-gradient),
+var(--color-gradient)),
+
+url(../images/hero-background/m-backround\ _768.jpg);
+
+
+// retina screen
+@media (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx){
+background-image: linear-gradient(to right,
+        var(--color-gradient),
+        var(--color-gradient)),
+
+    url(../images/hero-background/m-background\ _1536.jpg);
+}
+
+// decstop screen
+
+background-image: linear-gradient(to right,
+var(--color-gradient),
+var(--color-gradient)),
+
+url(../images/hero-background/l-background_1600.jpg);
+
+
+// retina screen
+@media (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx){
+background-image: linear-gradient(to right,
+        var(--color-gradient),
+        var(--color-gradient)),
+
+    url(../../images/hero-background/l-background_3200.jpg);
+}
+
+
+
+
+
+
+
     @media screen and( min-width: $tablet) {max-width: 768px;
         
     }
