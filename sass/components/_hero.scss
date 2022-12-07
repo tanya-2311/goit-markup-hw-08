@@ -41,7 +41,7 @@ background-image: linear-gradient(to right,
 var(--color-gradient),
 var(--color-gradient)),
 
-url(../images/hero-background/m-backround\ _768.jpg);
+url(../images/hero-background/m-backround_768.jpg);
 
 
            // tablet-retina screen
@@ -52,14 +52,13 @@ background-image: linear-gradient(to right,
         var(--color-gradient),
         var(--color-gradient)),
 
-    url(../images/hero-background/m-background\ _1536.jpg);
+    url(../images/hero-background/m-background_1536.jpg);
 }
 }
 // desctop screen
 @media screen and(min-width: 1201px){max-width: 1600px;
     height: 600px;
     padding: 200px 0;
-
 
 background-image: linear-gradient(to right,
 var(--color-gradient),
