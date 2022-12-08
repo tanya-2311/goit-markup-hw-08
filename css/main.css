@@ -1335,7 +1335,7 @@ button {
   .comand__img {
     width: calc((100% - 30px) / 2);
   }
-  .comand__img:nth-child(4n) {
+  .comand__img:nth-child(2n) {
     margin-right: 0;
   }
 }
