@@ -257,12 +257,11 @@
     <!--footer-->
 
     <footer class="footer">
-      <div class="container footer-social">
+      <div class="footer--flex container">
         <div class="footer-contacts">
           <a class="logo logo-footer" href="./index.html">Web<span class="logo-studiof">Studio</span> </a>
 
-          <address class="footer-adress">
-            <ul class="footer-list">
+            <ul class="footer-list list">
               <li class="footer-item">
                 <a
                   class="title-adress"
@@ -282,7 +281,7 @@
           </address>
         </div>
         <div class="footer-social-link">
-          <strong class="footer-title">приєднуйтесь</strong>
+          <b class="footer-title">приєднуйтесь</b>
           <ul class="footer-social-list">
             <li class="social-items">
               <a
@@ -337,9 +336,9 @@
               </a>
             </li>
           </ul>
-        </div>
-         <!-- FOOTER-FORM -->
-         <div class="form-footer">
+        </div> 
+    <!-- FOOTER-FORM -->
+     <div class="form-footer">
           <strong class="form-footer-title">Підпишіться на розсилку</strong>
 
           <form class="form-footer-email" name="form_footer_email" autocomplete="on">
@@ -357,8 +356,164 @@
                 </svg>
               </button>
             </div>
+         
         </div>
       </div>
     </footer>
+    <!-- MODAL WINDOW -->
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button class="close-button" type="button" data-modal-close>
+          <svg class="close-button-icon" width="11" height="11">
+            <use href="./images/icons.svg#icon-close-btn"></use>
+          </svg>
+        </button>
+        <strong class="strong-modal-form">Залиште свої дані, ми вам передзвонимо</strong>
+
+        <form class="modal-form" autocomplete="off">
+          <div class="form-group-modal">
+            <!-- label-name -->
+            <label class="form-field">
+              <span class="span-label-modal">Ім'я</span>
+              <input class="form-input-modal" type="text" name="name" required />
+
+              <svg class="form-icon-modal" width="18" height="18">
+                <use href="./images/icons.svg#icon-user-form"></use>
+              </svg>
+            </label>
+            <!-- label-phone -->
+            <label class="form-field">
+              <span class="span-label-modal">Телефон</span>
+              <input class="form-input-modal" type="text" name="phone" required placeholder="" />
+
+              <svg class="form-icon-modal" width="18" height="18">
+                <use href="./images/icons.svg#icon-phone-form"></use>
+              </svg>
+            </label>
+            <!-- label-mail -->
+            <label class="form-field">
+              <span class="span-label-modal">Пошта</span>
+              <input class="form-input-modal" type="email" name="emai" required placeholder="" />
+
+              <svg class="form-icon-modal" width="18" height="18">
+                <use href="./images/icons.svg#icon-email-form"></use>
+              </svg>
+            </label>
+
+            <!-- label - поле для введееня тексту -->
+            <label class="form-field form-field-last">
+              <span class="span-label-modal">Коментар</span>
+              <textarea
+                class="form-message"
+                name="comment"
+                rows="8"
+                placeholder="Введіть текст"
+              ></textarea>
+            </label>
+          </div>
+
+          <!-- form-checkbox -->
+          <!-- <div class="form-group-modal"> -->
+          <label class="form-agreement">
+            <input
+              class="form-checkbox"
+              visually-hidden
+              type="checkbox"
+              name="agreement-checkbox"
+            />
+
+            <span class="form-agreement-text"
+              >Погоджуюся з розсилкою та приймаю
+              <a class="form-agreement-link" href="">Умови договору</a>
+            </span>
+          </label>
+
+          <button class="button-form-modal button" type="submit">Відправити</button>
+          <!-- </div> -->
+        </form>
+      </div>
+    </div>
+    <!-- MENU-Mobile -->
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu">
+        <svg class="button-close-menu" width="40" height="40">
+          <use href="./images/icons.svg#icon-close_menu"></use>
+        </svg>
+      </button>
+
+      <ul class="mobile-menu list">
+        <li class="mobile-menu__item">
+          <a class="link current" href="./index.html">Студія</a>
+        </li>
+        <li class="mobile-menu__item"><a class="link" href="./portfolio.html">Портфоліо</a></li>
+        <li class="mobile-menu__item"><a class="link" href="">Контакти</a></li>
+      </ul>
+      <ul class="mobile-contacts list">
+        <li class="mobile-contacts__item">
+          <a class="link mobile-contacts__tel" href="tel:+380961111111">+38 096 111 11 11</a>
+        </li>
+        <li class="mobile-contacts__item">
+          <a class="link mobile-contacts__mailto" href="mailto:info@devstudio.com"
+            >info@devstudio.com</a
+          >
+        </li>
+      </ul>
+      <ul class="mobile-social list">
+        <li class="mobile-social__item">
+          <a
+            class="link"
+            href="https://instagram.com"
+            target="_blank"
+            rel="nofollow noopener noreferrer"
+            aria-label="Instagram"
+            >Instagram</a
+          >
+        </li>
+        <li><span class="mobile-social__line"></span></li>
+        <li class="mobile-social__item">
+          <a
+            class="link"
+            href="https://twitter.com"
+            target="_blank"
+            rel="nofollow noopener noreferrer"
+            aria-label="Twitter"
+            >Twitter</a
+          >
+        </li>
+        <li><span class="mobile-social__line"></span></li>
+
+        <li class="mobile-social__item">
+          <a
+            class="link"
+            href="https://facebook.com"
+            target="_blank"
+            rel="nofollow noopener noreferrer"
+            aria-label="Facebook"
+            >Facebook</a
+          >
+        </li>
+        <li><span class="mobile-social__line"></span></li>
+
+        <li class="mobile-social__item">
+          <a
+            class="link"
+            href="https://linkedin.com"
+            target="_blank"
+            rel="nofollow noopener noreferrer"
+            aria-label="LinkedIn"
+            >LinkedIn</a
+          >
+        </li>
+      </ul>
+    </div>
+    <script src="./js/modal.js"></script>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="./js/mobile-menu.js"></script>
   </body>
 </html>
+
