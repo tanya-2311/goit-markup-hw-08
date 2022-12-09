@@ -41,19 +41,10 @@
   padding-top: 94px;
   padding-bottom: 94px;
 }
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 1199px) {
   .section {
-    padding: 60px 0;
-  }
-}
-@media screen and (min-width: 768px) {
-  .section {
-    padding: 60px 0;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .section {
-    padding: 94px 0;
+    padding-top: 60px;
+    padding-bottom: 60px;
   }
 }
 
@@ -89,6 +80,10 @@ img {
 
 .footer-addres {
   font-style: normal;
+}
+
+a {
+  text-decoration: none;
 }
 
 .list {
@@ -242,6 +237,7 @@ button {
           transition-duration: var(--trnz-duration);
   -webkit-transition-timing-function: var(--trnz-tim-fnct);
           transition-timing-function: var(--trnz-tim-fnct);
+  margin: 0 auto;
 }
 .button-footer-form:active {
   background-color: var(--brand-color);
@@ -585,9 +581,6 @@ button {
 
 /* form-footer */
 .form-footer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -618,16 +611,8 @@ button {
   margin-top: 20px;
 }
 
-.footer-form-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
 @media screen and (max-width: 1199px) {
   .footer-form-list {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -647,10 +632,11 @@ button {
       -ms-flex-align: center;
           align-items: center;
   height: 50px;
-  width: 450px;
+  width: 100%;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.25;
+  margin-bottom: 20px;
   padding: 0;
   padding-left: 12px;
   margin-right: 12px;
@@ -674,15 +660,15 @@ button {
   color: var(--main-text-color);
   border-color: var(--icons-color);
 }
+@media screen and (min-width: 480px) {
+  .input-footer {
+    width: 450px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .input-footer {
     width: 358px;
     height: 50px;
-  }
-}
-@media screen and (max-width: 1199px) {
-  .input-footer {
-    margin-bottom: 20px;
   }
 }
 
@@ -1443,7 +1429,6 @@ button {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 450px;
   gap: 30px;
 }
 @media screen and (min-width: 768px) {
@@ -1502,18 +1487,6 @@ button {
   background-color: var(--backrground-secondary);
   padding: 60px 0;
 }
-@media screen and (max-width: 479px) {
-  .footer {
-    max-width: 480px;
-    height: 5457px;
-  }
-}
-@media screen and (max-width: 767px) {
-  .footer {
-    width: 768px;
-  }
-}
-
 .footer--flex {
   text-align: center;
 }

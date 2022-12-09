@@ -118,6 +118,7 @@ button {
     &:focus {
     color: var(--secondary-text-color);
     background-color: var(--button-text-focus);}
+    margin: 0 auto;
 
     @media screen and( min-width:$desctop){display: flex;
 
