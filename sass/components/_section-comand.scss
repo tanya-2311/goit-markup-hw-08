@@ -44,9 +44,15 @@
 
 .comand__title {
     margin-bottom: 50px;
-    @media screen and (max-width: $desctop) {
-        font-size: 28px;
-      }
+    font-size: 28px;
+    line-height: 1.18;
+
+
+@media screen and( min-width: $desctop){ margin-bottom: 50px;
+    font-size: 36px;
+    line-height: 1.16;
+
+}
 
 }
 
