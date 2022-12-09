@@ -59,14 +59,14 @@
     right: 15px;
     color: #fff;
   }
-  
+ 
   .mobile-menu {
     padding: 0;
     margin-bottom: auto;
     list-style: none;
   }
   
-  .mobile-menu .link {
+  .mobile-menu__link {
     display: block;
     padding: 10px;
     color: #212121;
@@ -79,10 +79,14 @@ letter-spacing: 0.02em;
 transition-property: color;
     transition-duration: var(--trnz-duration);
     transition-timing-function: var(--trnz-tim-fnct);
-    
+
+   
     &:hover,
     &:focus {
     color: #2196F3;
+    }
+    &.current {
+      color: var(--brand-color);
     }
   }
   .button-close-menu{

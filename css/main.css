@@ -365,6 +365,8 @@ button {
 
 /* HEADER */
 .header {
+  padding-top: 10px;
+  padding-bottom: 10px;
   border-bottom: 1px solid var(--border-background);
 }
 
@@ -840,16 +842,7 @@ button {
 /* form-checkbox */
 .form-agreement {
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  gap: 7px;
+  display: inline-block;
   margin-bottom: 28px;
   height: 24px;
 }
@@ -861,6 +854,7 @@ button {
   cursor: pointer;
   background-image: url(../images/icon\ check.svg);
   margin-bottom: 30px;
+  width: 100%;
   width: 16px;
   height: 15px;
   border: 2px solid var(--secondary-text-color);
@@ -1756,7 +1750,7 @@ button {
   list-style: none;
 }
 
-.mobile-menu .link {
+.mobile-menu__link {
   display: block;
   padding: 10px;
   color: #212121;
@@ -1772,8 +1766,11 @@ button {
   -webkit-transition-timing-function: var(--trnz-tim-fnct);
           transition-timing-function: var(--trnz-tim-fnct);
 }
-.mobile-menu .link:hover, .mobile-menu .link:focus {
+.mobile-menu__link:hover, .mobile-menu__link:focus {
   color: #2196F3;
+}
+.mobile-menu__link.current {
+  color: var(--brand-color);
 }
 
 .button-close-menu {
