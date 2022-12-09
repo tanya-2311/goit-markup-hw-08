@@ -1193,18 +1193,17 @@ button {
           align-items: center;
   background-color: var(--backrground-comand);
   margin-bottom: 30px;
+  height: 120px;
 }
 @media screen and (min-width: 768px) {
   .icon-features {
     width: 354px;
-    height: 120px;
     margin-bottom: 30px;
   }
 }
 @media screen and (min-width: 1200px) {
   .icon-features {
     width: 270px;
-    height: 120px;
   }
 }
 
@@ -1335,7 +1334,7 @@ button {
 }
 
 .comand__title {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   font-size: 28px;
   line-height: 1.18;
 }

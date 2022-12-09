@@ -51,18 +51,18 @@
     background-color: var(--backrground-comand);
    
     margin-bottom: 30px;
-  
+    height: 120px;
         
     @media screen and (min-width: $tablet){ 
        
         width: 354px;
-        height: 120px;
+        
         margin-bottom: 30px;}
 
     @media screen and (min-width: $desctop){ 
         
         width: 270px;
-        height: 120px;
+       
        }
     
 }
