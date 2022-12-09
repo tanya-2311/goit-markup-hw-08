@@ -4,7 +4,7 @@
     text-align: center;
     padding: 118px 0;
     margin: 0 auto;
-    max-width: 480px;
+    max-width: 1600px;
     height: 400px;
 
     background-color: var(--backrground-secondary);
@@ -35,7 +35,7 @@
 
                 // tablet screen
 @media screen and (min-width: 769px)
-{max-width: 768px;
+{
 
 background-image: linear-gradient(to right,
 var(--color-gradient),
@@ -56,7 +56,7 @@ background-image: linear-gradient(to right,
 }
 }
 // desctop screen
-@media screen and(min-width: 1201px){max-width: 1600px;
+@media screen and(min-width: 1201px){
     height: 600px;
     padding: 200px 0;
 

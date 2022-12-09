@@ -445,7 +445,7 @@ button {
   text-align: center;
   padding: 118px 0;
   margin: 0 auto;
-  max-width: 480px;
+  max-width: 1600px;
   height: 400px;
   background-color: var(--backrground-secondary);
   background-repeat: no-repeat;
@@ -462,7 +462,6 @@ button {
 }
 @media screen and (min-width: 769px) {
   .hero {
-    max-width: 768px;
     background-image: -webkit-gradient(linear, left top, right top, from(var(--color-gradient)), to(var(--color-gradient))), url(../images/hero-background/m-backround\ _768.jpg);
     background-image: linear-gradient(to right, var(--color-gradient), var(--color-gradient)), url(../images/hero-background/m-backround\ _768.jpg);
   }
@@ -475,7 +474,6 @@ button {
 }
 @media screen and (min-width: 1201px) {
   .hero {
-    max-width: 1600px;
     height: 600px;
     padding: 200px 0;
     background-image: -webkit-gradient(linear, left top, right top, from(var(--color-gradient)), to(var(--color-gradient))), url(../images/hero-background/l-background_1600.jpg);
