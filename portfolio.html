@@ -29,14 +29,21 @@
 
     <header class="header">
       <div class="header__container container">
-        <a class="logo header__logo" href="./index.html">Web<span class="logo__label">Studio</span> </a>
-        <nav class="header__nav">
+        <a class="header__logo logo" href="./index.html"
+          >Web<span class="logo__label">Studio</span>
+        </a>
+        <!-- Mobile-menu -->
+        <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+          <svg class="" width="40" height="40">
+            <use href="./images/icons.svg#icon-menu_burger"></use>
+          </svg>
+        </button>
+
+        <nav class="nav header__nav">
           <ul class="nav__list">
-            <li class="nav__link link"><a href="./index.html" class="link">Студія</a></li>
-            <li class="nav__link link">
-              <a href="./portfolio.html" class="link current">Портфоліо</a>
-            </li>
-            <li class="nav__link"><a href="./" class="link">Контакти</a></li>
+            <li class="nav__link link"><a href="./index.html" class="link ">Студія</a></li>
+            <li class="nav__link link"><a href="./portfolio.html" class="link current">Портфоліо</a></li>
+            <li class="nav__link link"><a href="./" class="link">Контакти</a></li>
           </ul>
         </nav>
         <ul class="header-contacts">
@@ -57,7 +64,6 @@
         </ul>
       </div>
     </header>
-
     <!--main -->
     <main>
       <section class="main-portfolio">
@@ -443,10 +449,10 @@
 
       <ul class="mobile-menu list">
         <li class="mobile-menu__item">
-          <a class="link current" href="./index.html">Студія</a>
+          <a class="mobile-menu__link link " href="./index.html">Студія</a>
         </li>
-        <li class="mobile-menu__item"><a class="link" href="./portfolio.html">Портфоліо</a></li>
-        <li class="mobile-menu__item"><a class="link" href="">Контакти</a></li>
+        <li class="mobile-menu__item"><a class="mobile-menu__link current link " href="./portfolio.html">Портфоліо</a></li>
+        <li class="mobile-menu__item"><a class="mobile-menu__link link " href="">Контакти</a></li>
       </ul>
       <ul class="mobile-contacts list">
         <li class="mobile-contacts__item">
@@ -516,4 +522,3 @@
     <script defer src="./js/mobile-menu.js"></script>
   </body>
 </html>
-
