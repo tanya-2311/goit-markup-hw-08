@@ -365,9 +365,13 @@ button {
 
 /* HEADER */
 .header {
-  padding-top: 10px;
-  padding-bottom: 10px;
   border-bottom: 1px solid var(--border-background);
+}
+@media screen and (max-width: 767px) {
+  .header {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
 }
 
 /* header-container ставимо навігацію в ряд */
@@ -504,7 +508,7 @@ button {
 }
 @media screen and (min-width: 1200px) {
   .hero__title {
-    width: 1200px;
+    width: 696px;
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
@@ -1117,7 +1121,7 @@ button {
 .features {
   padding: 60px 0;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .features {
     padding: 94px 0;
   }
@@ -1167,7 +1171,9 @@ button {
 .our-features__item {
   margin-top: 30px;
 }
-
+.our-features__item:first-child {
+  margin-top: 0;
+}
 .our-features__item:last-child {
   margin-right: 0;
 }
@@ -1197,10 +1203,6 @@ button {
   .icon-features {
     width: 270px;
   }
-}
-
-.our-features__item:first-child {
-  margin-left: 0;
 }
 
 .icon-features__text {
@@ -1520,11 +1522,15 @@ button {
 
 .footer-contacts {
   text-align: center;
-  margin-bottom: 60px;
 }
 @media screen and (min-width: 1200px) {
   .footer-contacts {
     margin-right: 70px;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .footer-contacts {
+    margin-bottom: 60px;
   }
 }
 
@@ -1555,7 +1561,12 @@ button {
 }
 
 .footer-social-link {
-  margin-bottom: 60px;
+  text-align: center;
+}
+@media screen and (max-width: 1199px) {
+  .footer-social-link {
+    margin-bottom: 60px;
+  }
 }
 
 .footer-adress {

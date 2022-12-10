@@ -1,7 +1,11 @@
 /* HEADER */
-.header {padding-top: 10px;
-    padding-bottom: 10px;
-    border-bottom: 1px solid var(--border-background)
+.header {
+    border-bottom: 1px solid var(--border-background);
+
+    @media screen and( max-width: 767px){padding-top: 10px;
+        padding-bottom: 10px;
+
+    }
 }
 /* header-container ставимо навігацію в ряд */
 .header__container {

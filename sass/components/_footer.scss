@@ -33,11 +33,14 @@
    
     text-align: center;
     
-margin-bottom: 60px;
+
 
     @media screen and( min-width:$desctop){  margin-right: 70px;
 
     }  
+    @media screen and( max-width:1199px){  margin-bottom: 60px;
+
+    } 
    
 }
 .footer-list {
@@ -59,8 +62,9 @@ align-items: center;
 
 }
 .footer-social-link{
-    margin-bottom: 60px;
-}
+    text-align: center;
+    @media screen and( max-width:1199px){  margin-bottom: 60px;
+}}
 .footer-adress {
     width: 100%;
     margin-top: 20px;
