@@ -181,15 +181,16 @@ button {
 .button-portfolio {
   border: none;
   margin-right: 8px;
+  margin-bottom: 15px;
 }
-
 .button-portfolio:nth-child(5n) {
   margin-right: 0;
 }
 
 /* button-filtr */
 .button-filtr {
-  padding: 6px 22px;
+  width: auto;
+  padding: 6px 25px;
   background-color: var(--backrground-comand);
   color: var(--primary-text-color);
   cursor: pointer;
@@ -222,6 +223,11 @@ button {
   border-radius: 4px;
   -webkit-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
           box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+@media screen and (min-width: 768px) {
+  .button-filtr {
+    margin-bottom: 0;
+  }
 }
 
 .button-footer-form {
@@ -998,16 +1004,13 @@ button {
           transform: translate(-50%, -65%) scale(0.1);
 }
 
-.main-portfolio {
-  padding: 94px 0;
-}
-
 .photo-portfolio {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  gap: 30px;
 }
 
 .filtr-item {
