@@ -1014,20 +1014,25 @@ button {
 }
 
 .filtr-item {
-  margin-right: 30px;
-  margin-bottom: 30px;
+  width: 100%;
 }
-
-.filtr-item:nth-child(3n) {
-  margin-right: 0;
+@media screen and (min-width: 768px) {
+  .filtr-item {
+    width: calc((100% - 30px) / 2);
+  }
 }
-
-.filtr-item:nth-last-child(-n+3) {
-  margin-bottom: 0;
+@media screen and (min-width: 1200px) {
+  .filtr-item {
+    width: calc((100% - 60px) / 3);
+  }
 }
 
 .portfolio-link {
   display: block;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   text-decoration: none;
   color: inherit;
   -webkit-transition-property: border, -webkit-box-shadow;
@@ -1048,6 +1053,18 @@ button {
   border: 1px solid color var(--secondary-text-color);
   -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
           box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+@media screen and (min-width: 768px), (max-width: 1199px) {
+  .portfolio-link {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 100%;
+  }
 }
 
 .title-stule {
@@ -1077,6 +1094,7 @@ button {
 }
 
 .team-thumb {
+  width: 100%;
   position: relative;
   overflow: hidden;
 }
