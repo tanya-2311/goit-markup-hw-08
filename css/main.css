@@ -1029,10 +1029,7 @@ button {
 
 .portfolio-link {
   display: block;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  width: 100%;
   text-decoration: none;
   color: inherit;
   -webkit-transition-property: border, -webkit-box-shadow;
